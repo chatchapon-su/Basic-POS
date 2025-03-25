@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.loginbox{
+    width: 300px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loginbox h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.loginbox input,
+.loginbox textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.loginbox input:focus,
+.loginbox textarea:focus {
+    border-color: rgb(3, 228, 179);
+}
+
+.loginbox a{
+    color: rgb(0, 180, 120);
+    text-decoration: none;
+}
+
+.loginbox a:hover {
+    text-decoration: underline;
+}
+
+.login{
+    text-align: center;
+}
+
+.login button{
+    background-color: rgb(3, 228, 179);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+}
+
+.login button:hover{
+    background-color: rgb(1, 193, 150);
+}
+
+.status{
+    text-align: center;
+    color: red;
+    margin-bottom: 10px;
+}

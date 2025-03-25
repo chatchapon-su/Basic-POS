@@ -1,0 +1,117 @@
+@media screen and (max-width: 900px) {
+    .container{
+        height: 1000px !important;
+        /*background-color: blue;*/
+    }
+    .bar a#home{
+        margin-right: 60% !important;
+    }
+    .bar a#barmenu{
+        font-size: 80%;
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .bar a#home{
+        margin-right: 30% !important;
+    }
+    .bar a#barmenu{
+        font-size: 80%;
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+    }
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    display:block;
+    height: 100vh;
+    /*background-color: blue;*/
+}
+
+.bar{
+    background-color: rgb(212, 236, 247);
+    height: 50px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+.bar a{
+    text-decoration: none;
+    color: black;
+}
+
+.bar a:hover{
+    color: white;
+}
+
+.bar a#home{
+    margin-right: 70%;
+}
+
+.bar a#barmenu{
+    margin-right: auto;
+    margin-left: auto;
+    /*background-color: #04AA6D;*/
+}
+
+.bar h1{
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+
+.summarize{
+    /*background-color: rgb(0, 0, 255);*/
+    text-align: center;
+}
+
+.rank{
+    /*background-color: coral;*/
+    border: 1px solid rgba(0, 0, 0, 0.24);
+}
+
+.rankofbox{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 15px;
+    padding: 15px;
+}
+
+.rankbox{
+    background-color: rgba(235, 237, 100, 0.623);
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.orderall{
+    text-align: center;
+}
+
+.allorderdetail{
+    background-color: rgba(0, 0, 0, 0.123);
+}
+
+.orderdetailofbox{
+    /*background-color: brown;*/
+    padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.301);
+}
+
+.orderdetailbox{
+    background-color: rgba(127, 255, 212, 0.384);
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.322);
+}

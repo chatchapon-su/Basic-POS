@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsunami Shope</title>
+    <link rel="stylesheet" href="./pin.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bar">
+            <a id="home" href="./index.html"><h1>POS</h1></a>
+            <a id="barmenu" href="./selldetail.html"><p>ยอดขาย</p></a>
+            <a id="barmenu" href="./addproduct.html"><p>เพิ่มสินค้า</p></a>
+            <!--a id="barmenu" href="./user.html"><p>ลูกค้าใหม่</p></a-->
+        </div>
+        <div class="selldetail">
+            <div class="orderall">
+                <h1>การซื้อทั้งหมด</h1>
+                <input type="date" name="datetime"><button onclick=buydate()>ค้นหา</button>
+                <div class="allorderdetail">
+                    <div id="orderdetail"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./pin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</body>
+</html>

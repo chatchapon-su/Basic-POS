@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+}
+
+.container{
+    display: block;
+}
+
+.bar{
+    background-color: rgb(212, 236, 247);
+    height: 50px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+.bar a{
+    text-decoration: none;
+    color: black;
+}
+
+.bar a:hover{
+    color: white;
+}
+
+.bar a#home{
+    margin-right: 70%;
+}
+
+.bar a#barmenu{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.bar h1{
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.bar p{
+    margin: auto;
+    margin-top: 15px;
+}
+
+.menu{
+    /*background-color: aqua;*/
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.orderbox{
+    /*background-color: blueviolet;*/
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+}
+
+.choose button{
+    background-color: rgba(226, 43, 113, 0.219);
+    border: 1px solid rgba(0, 0, 0, 0.295);
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+.barcode{
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    display: block;
+    background-color: rgb(212, 236, 247);
+    padding: 5px;
+}
+
+/*.choose{
+    background-color: rgb(255, 0, 128);
+}*/
+
+.orderdetail{
+    /*background-color: brown;*/
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    padding: 10px;
+    display: flex;
+    flex-direction:column;
+}
+
+.detailorder{
+    padding: 10px;
+}
+
+/*.users{
+    background-color: blueviolet;
+}*/
+
+/*.orderdetail{
+    background-color: cadetblue;
+}*/
+
+.pinall{
+    text-align: center;
+}
+
+.pinall a{
+    text-decoration: none;
+    color: black;
+    background-color: rgba(0, 0, 0, 0.185);
+    padding: 5px 10px;
+    border: 1px solid rgba(0, 0, 0, 0.233);
+}

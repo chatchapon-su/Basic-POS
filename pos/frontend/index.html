@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsunami Shope</title>
+    <link rel="stylesheet" href="./indexnew.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bar">
+            <a id="home" href="./index.html"><h1>POS</h1></a>
+            <a id="barmenu" href="./selldetail.html"><p>ยอดขาย</p></a>
+            <a id="barmenu" href="./addproduct.html"><p>เพิ่มสินค้า</p></a>
+            <!--a id="barmenu" href="./user.html"><p>ลูกค้าใหม่</p></a-->
+        </div>
+        <div class="menu">
+            <div class="choose" id="products"></div>
+            <div class="orderdetail">
+                <div class="users">
+                    <h1>ข้อมูลสมาชิก</h1>
+                    <p>เบอร์โทรศัพท์ <input type="number" name="userid"></p>
+                    <p id="userdetail">รายละเอียดสมาชิก :</p>
+                    <div class="memberbutton">
+                        <button onclick=sell()>Member</button>
+                    </div>
+                    <hr>
+                </div>
+                <div class="detailorder">
+                    <h1>รายละเอียดออเดอร์</h1>
+                    <p id="order"></p>
+                    <p id="status"></p>
+                    <button onclick=createbill()>สร้างใบเสร็จ</button>
+                    <div class="form-popup" id="myForm">
+                        <form class="form-container">
+                            <h1>BILL</h1>
+                            <div id="billdetail"></div>
+                            <button type="button" class="btn cancel" onclick="closebill()">ปิด</button>
+                        </form>
+                      </div>
+                    <button onclick=confirmorder()>ยืนยันออเดอร์</button>
+                </div>
+            </div>
+            
+        </div>
+        <div class="barcode"><p>Barcode : <input type="number" name="barcode"> <button onclick=searchbarcode()>ค้นหา</button> <p id="barcodestatus"></p></div>
+    </div>
+    
+    <script type="text/javascript" src="./index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</body>
+</html>

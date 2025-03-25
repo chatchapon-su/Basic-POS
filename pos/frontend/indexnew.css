@@ -1,0 +1,199 @@
+@media screen and (max-width: 900px) {
+    .container{
+        height: 1000px !important;
+        /*background-color: blue;*/
+    }
+    .bar a#home{
+        margin-right: 60% !important;
+    }
+    .bar a#barmenu{
+        font-size: 80%;
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+    }
+    .menu{
+        /*background-color: rgb(255, 0, 119);*/
+        display: block !important;
+        height: 90% !important;
+    }
+    .choose{
+        border: 1px solid rgba(0, 0, 0, 0.336);
+        width: 100% !important;
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .bar a#home{
+        margin-right: 30% !important;
+    }
+    .bar a#barmenu{
+        font-size: 80%;
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+    }
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    display:block;
+    height: 100vh;
+    /*background-color: blue;*/
+}
+
+.bar{
+    background-color: rgb(212, 236, 247);
+    height: 50px;
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+.bar a{
+    text-decoration: none;
+    color: black;
+}
+
+.bar a:hover{
+    color: white;
+}
+
+.bar a#home{
+    margin-right: 70%;
+}
+
+.bar a#barmenu{
+    margin-right: auto;
+    margin-left: auto;
+    /*background-color: #04AA6D;*/
+}
+
+.bar h1{
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.menu{
+    /*background-color: rgb(255, 0, 119);*/
+    display: flex;
+    height: 80%;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+}
+
+.choose{
+    /*background-color: #04AA6D;*/
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    width: 70%;
+}
+
+table, th, td {
+    border:1px solid black;
+}
+
+/*.orderbox{
+    background-color: rgba(0, 0, 0, 0.089);
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    border-radius: 5px;
+}*/
+
+.barcode{
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    background-color: rgb(212, 236, 247);
+    padding: 5px;
+    height: 10%;
+}
+
+.orderdetail{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+}
+
+/*.detailorder{
+    padding: 10px;
+}
+
+.detailorder p{
+    font-size: 15px;
+}*/
+
+#order p{
+    font-size: 40px;
+}
+
+.detailorder button{
+    margin-top: 5%;
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/*.users{
+    background-color: blueviolet;
+}*/
+
+.memberbutton{
+    text-align: center;
+}
+
+.memberbutton button{
+    border: 1px solid rgba(0, 0, 0, 0.274);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+
+
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /* Add styles to the form container */
+  .form-container {
+    max-width: 400px;
+    padding: 10px;
+    background-color: white;
+  }
+  
+  /* Set a style for the submit/login button */
+  .form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+  }
+  
+  /* Add a red background color to the cancel button */
+  .form-container .cancel {
+    background-color: red;
+  }
+  
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+
+  .shopdetail{
+    text-align: center;
+  }

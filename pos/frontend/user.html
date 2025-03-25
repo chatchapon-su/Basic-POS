@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsunami Shope</title>
+    <link rel="stylesheet" href="./user.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bar">
+            <a id="home" href="./index.html"><h1>POS</h1></a>
+            <a id="barmenu" href="./selldetail.html"><p>ยอดขาย</p></a>
+            <a id="barmenu" href="./addproduct.html"><p>เพิ่มสินค้า</p></a>
+            <a id="barmenu" href="./user.html"><p>ลูกค้าใหม่</p></a>
+        </div>
+        <div class="register">
+            <div class="form-box">
+
+                <div class="header">
+                    Resgister Form
+                </div>
+                <hr>
+    
+                <div class="flex form-input">
+                    <div class="header-form">ชื่อ</div> 
+                    <input class="form" name="fname" type="text"> 
+                </div>
+                <div class="flex form-input">
+                    <div class="header-form">นามสกุล</div>
+                    <input class="form" name="lname" type="text"> <br>
+                </div>
+                <div class="flex form-input">
+                    <div class="header-form">เบอร์โทรศัพท์</div> 
+                    <input class="form" name="phone" type="number" min="0" max="100">
+                </div>
+
+                <div class="form-input">
+                    ที่อยู่
+                    <div>
+                        <textarea name="address"></textarea>
+                    </div>
+                </div>
+    
+                <div class="message" id="message">
+                    
+                </div>
+    
+                <div class="button-container">
+                    <button onclick=submitData()>ส่งข้อมูล</button>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./user.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</body>
+</html>

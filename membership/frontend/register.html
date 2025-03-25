@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Store - Register</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="loginbox">
+            <h1>Register</h1>
+            <p>Firstname: <input type="text" name="firstname" placeholder="Enter your first name"></p>
+            <p>Lastname: <input type="text" name="lastname" placeholder="Enter your last name"></p>
+            <p>Phone: <input type="number" name="phone" placeholder="Enter your phone number"></p>
+            <p>Address: <textarea name="address" placeholder="Enter your address"></textarea></p>
+            <p>Password: <input type="password" name="password" placeholder="Enter your password"></p>
+            <a href="./login.html"><p>Already have an account? Login</p></a>
+            <div class="status"><p id="messagelogin"></p></div>
+            <div class="login">
+                <button onclick="register()">Register</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</body>
+</html>

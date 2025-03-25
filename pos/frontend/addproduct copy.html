@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tsunami Shope</title>
+    <link rel="stylesheet" href="./addproductnew.css">
+</head>
+<body>
+    <div class="container">
+        <div class="bar">
+            <a id="home" href="./index.html"><h1>POS</h1></a>
+            <a id="barmenu" href="./selldetail.html"><p>ยอดขาย</p></a>
+            <a id="barmenu" href="./addproduct.html"><p>เพิ่มสินค้า</p></a>
+            <a id="barmenu" href="./user.html"><p>ลูกค้าใหม่</p></a>
+        </div>
+        <div class="menu">
+            <div class="choose" id="products"></div>
+            <div class="orderdetail">
+                <div class="users">
+                    <h1>เพิ่มสต๊อก</h1>
+                    <p id="userdetail">รายละเอียดสินค้า :</p>
+                    <p id="amount">จำนวนสินค้า <input type="number"></p>
+                    <button onclick=addstock()>เพิ่มสต๊อก</button>
+                    <div id="changestatus"></div>
+                    <div id="productstatus"></div><hr>
+                </div>
+                <div class="detailorder">
+                    <h1>เพิ่มสินค้า</h1>
+                    <div class="detailorderinput">
+                    <p>ชื่อสินค้า : </p><input type="text" name="productname">
+                    <p>ราคา : </p><input type="number" name="prices">
+                    <p>จำนวนสต๊อก : </p><input type="number" name="stock">
+                    <p>Barcode : </p><input type="number" name="barcode">
+                    </div>
+                    <div id="createpro"></div>
+                    <button onclick=createproduct()>เพิ่มสินค้า</button>
+                    
+                </div>
+                <div class="pinall">
+                    <hr>
+                    <h3>รายการสินค้าเข้า</h3>
+                    <a href="./pin.html">สินค้าที่เข้ามา</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="barcode"><p>Barcode : <input type="number" name="codebar"> <button onclick=searchbarcode()>ค้นหา</button> <p id="barcodestatus"></p></div>
+    <script type="text/javascript" src="./addproduct.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+</body>
+</html>

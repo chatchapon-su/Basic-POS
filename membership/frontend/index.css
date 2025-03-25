@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+}
+
+.bar{
+    background-color: #4CAF50;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 13fr 1fr 1fr;
+}
+
+.logo{
+    width: 150px;
+    /*background-color: violet;*/
+}
+
+.bar a{
+    text-decoration: none;
+    color: white;
+}
+
+.bar a:hover {
+    color: #63e667;
+}
+
+.bar h1{
+    margin: auto;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.bar p{
+    margin: auto;
+    margin-top: 15px;
+}
+
+.products{
+    width: 80%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+/*.products {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}*/
+
+.products a{
+    text-decoration: none;
+    color: black;
+}
+
+/*.box{
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-top: 10px;
+}*/
+.box {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/*.box h1{
+    font-size: 25px;
+}*/
+
+.box img {
+    height: 200px; /* กำหนดความสูงของภาพ */
+    width: auto;   /* ให้ความกว้างปรับตามอัตราส่วนของภาพ */
+    object-fit: cover; /* กำหนดวิธีการแสดงผลภาพ (สามารถใช้ cover, contain, fill, etc.) */
+	display: block; /* ทำให้ภาพเป็นบล็อก */
+    margin: 0 auto; /* จัดกลางภาพ */
+}
+
+
+.box h1 {
+    font-size: 22px;
+    color: #333;
+}
+
+/*.box h2{
+    font-size: 20px;
+}*/
+
+.box h2 {
+    font-size: 18px;
+    color: #666;
+}
+
+.box button{
+    border: none;
+    background-color: initial;
+    color: white;
+}
+
+/*.box a{
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 5px;
+}*/
+
+.box a {
+    display: block;
+    text-align: center;
+    background-color: #4CAF50;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.box a:hover {
+    background-color: #45a049;
+}
+
+.box a#edit{
+    background-color: rgb(255, 153, 0);
+}
+
+.box a#edit:hover{
+    background-color: rgb(255, 238, 0);
+}
+
+.box a#delete{
+    background-color: red;
+}
+
+.box a#delete:hover{
+    background-color: rgb(255, 174, 0);
+}
+
+.orders{
+    padding: 20px;
+    width: 50%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.orders button{
+    border: none;
+    background-color: rgb(0, 255, 213);
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.orders button:hover{
+    background-color: rgb(0, 255, 136);
+}
+
+.user{
+    display: flex;
+}
+
+.user p{
+    margin-left: 15px;
+    font-size: 20px;
+}
+
+.order{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
